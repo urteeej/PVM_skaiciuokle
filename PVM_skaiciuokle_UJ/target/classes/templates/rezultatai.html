@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .card {
+            text-align: center;
+            width: 400px;
+            color: white;
+            background-color: cadetblue;
+        }
+
+        .card-header {
+            background-color: black;
+        }
+    </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body  style="background: gray">
+<div class="container">
+    <div class="row mt-5">
+
+        <div class="col-md-4">
+            <div class="card bg-secondary">
+                <div class="card-header bg-dark">VIENETO KAINA BE PVM(EUR):</div>
+                <div class="card-body">
+                    <span th:text="${PKainaBe}"></span><br>
+                </div>
+            </div>
+            <br>
+            <div class="card bg-secondary">
+                <div class="card-header bg-dark">VIENETO KAINA SU PVM(EUR):</div>
+                <div class="card-body">
+                    <span th:text="${PKainaSu}"></span><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card bg-secondary">
+                <div class="card-header bg-dark">PVM(EUR):</div>
+                <div class="card-body">
+                    <span th:text="${PVMvnt}"></span><br>
+                </div>
+            </div>
+            <br>
+            <div class="card bg-secondary">
+                <div class="card-header bg-dark">BENDRAS PVM KIEKIS(EUR):</div>
+                <div class="card-body">
+                    <span th:text="${BendrPVM}"></span><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card bg-secondary">
+                <div class="card-header bg-dark">BENDRA PREKIŲ KAINA BE PVM(EUR):</div>
+                <div class="card-body">
+                    <span th:text="${BendraKainaBe}"></span><br>
+                </div>
+            </div>
+            <br>
+            <div class="card bg-secondary">
+                <div class="card-header bg-dark">VISA SUMA SU PVM(EUR):</div>
+                <div class="card-body">
+                    <span th:text="${BendraSuma}"></span><br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
